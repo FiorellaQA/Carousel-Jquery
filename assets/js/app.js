@@ -1,26 +1,26 @@
 $(".right").on("click", function(){
-    var id = $(".carousel-item.active").attr("id");
+    var id = $(".active").attr("id");
     id = parseInt(id) + 1;
-    noSe(id);
+    next(id);
 
     return false;
 });
 
 $(".left").on("click", function(){
-    var id = $(".carousel-item.active").attr("id");
+    var id = $(".active").attr("id");
     id = parseInt(id) - 1;
-    noSe(id);
+    next(id);
 
     return false;
 });
 
 
-function noSe(id){
+function next(id){
     if($("[id=\""+id+"\"]").length){
         $(".carousel-item.active").removeClass("active");
         $("[id=\""+id+"\"]").addClass("active");
     } else {
-        alert("ahora no joven")
+        alert("ahora no joven");
     }
 }
 
