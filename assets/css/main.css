@@ -10,7 +10,7 @@ div#carousel {
     border:1px solid yellow;
     min-height: 500px;
 }
-div.content-control{
+div.content-control-arrow{
     position: absolute;
     top: 46%;
     display: flex;
